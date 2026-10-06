@@ -9,13 +9,15 @@
 
 ```python
 def get_data_from_url(url: str) -> str | None:
-  import requests
-  response = requests.get(url)
-  if response.status_code == 200:
-      data = response.text
-      return data;
-  else:
-      print("Произошла ошибка!")
+    """Загрузить файл по ссылке"""
+    import requests
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.text
+        print("> Файл успешно загрузился!")
+        return data
+    else:
+        print("> Произошла ошибка загрузки!")
 ```
 
 В параметр `url` нужно вставить ссылку на сырой файл датасета.
