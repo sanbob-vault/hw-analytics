@@ -17,3 +17,11 @@ def get_data_from_url(url: str) -> str | None:
   else:
       print("Произошла ошибка!")
 ```
+
+В параметр `url` нужно вставить ссылку на сырой файл датасета.
+
+### 01-batman
+
+```url
+https://raw.githubusercontent.com/sanbob-vault/hw-analytics/refs/heads/main/01-batman/data/buildings.dat
+```
